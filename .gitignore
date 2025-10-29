@@ -1,0 +1,31 @@
+# Bippi Project - Root .gitignore
+
+# Mobile (subdirectory .gitignore handles specifics)
+bippi-mobile/node_modules/
+bippi-mobile/.expo/
+bippi-mobile/dist/
+bippi-mobile/web-build/
+
+# Backend (subdirectory .gitignore handles specifics)
+bippi-backend/venv/
+bippi-backend/__pycache__/
+bippi-backend/*.pyc
+bippi-backend/.pytest_cache/
+
+# Environment variables (sensitive)
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

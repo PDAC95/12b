@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npx expo --version)",
+      "Bash(npx create-expo-app@latest bippi-mobile --template blank-typescript)",
+      "Bash(mkdir -p src/features/{auth,scanner,dashboard,history,products}/{screens,components,hooks,services,types} src/shared/{components,hooks,utils,types} src/core/{api,storage,config} src/navigation src/store assets/{images,fonts,icons})",
+      "Bash(touch src/features/auth/index.ts src/features/scanner/index.ts src/features/dashboard/index.ts src/features/history/index.ts src/features/products/index.ts src/shared/components/index.ts src/shared/hooks/index.ts src/shared/utils/index.ts src/shared/types/index.ts src/core/api/index.ts src/core/storage/index.ts src/core/config/index.ts src/navigation/index.ts src/store/index.ts)",
+      "Bash(npx expo install @react-navigation/native @react-navigation/bottom-tabs expo-barcode-scanner expo-camera @react-native-async-storage/async-storage)",
+      "Bash(npm install @supabase/supabase-js zustand axios react-hook-form)",
+      "Bash(npm install --save-dev eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-react eslint-plugin-react-hooks prettier)",
+      "Bash(npm run lint)",
+      "Bash(npm install --save-dev eslint@^8.57.0)",
+      "Bash(npm run format:check)",
+      "Bash(npm run format)",
+      "Bash(python -m venv venv)",
+      "Bash(venv\\Scripts\\activate)",
+      "Bash(pip install fastapi \"uvicorn[standard]\")",
+      "Bash(source venv/Scripts/activate)",
+      "Bash(pip install asyncpg sqlalchemy)",
+      "Bash(pip install pytest pytest-asyncio black ruff mypy)",
+      "Bash(black --check src/)",
+      "Bash(ruff check src/)",
+      "Bash(git init)",
+      "Bash(git remote add origin https://github.com/PDAC95/12b.git)",
+      "Bash(git add .)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

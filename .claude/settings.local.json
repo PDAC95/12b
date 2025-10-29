@@ -24,7 +24,12 @@
       "Bash(ruff check src/)",
       "Bash(git init)",
       "Bash(git remote add origin https://github.com/PDAC95/12b.git)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: Initial project setup - US-001 Complete\n\nSetup completo de fundación técnica:\n\nMobile (React Native + Expo):\n- Proyecto Expo inicializado con TypeScript\n- Estructura feature-based configurada\n- Dependencias instaladas: React Navigation, Supabase client, Zustand, etc.\n- ESLint + Prettier configurados\n\nBackend (FastAPI + Python):\n- Proyecto FastAPI con Python 3.11+ inicializado\n- Estructura modular configurada (api, core, models, schemas, services)\n- Dependencias instaladas: FastAPI, Uvicorn, SQLAlchemy, asyncpg\n- Black + Ruff configurados para linting\n\nInfrastructure:\n- Variables de entorno (.env) preparadas para Supabase\n- .gitignore configurados (mobile y backend)\n- Monorepo structure establecida\n- Documentación de proyecto incluida (PRD, Architecture, Backlog, Sprint 1)\n\nPróximo paso: Crear proyecto Supabase y desplegar schema DB\n\n🤖 Generated with Claude Code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git branch -M main)",
+      "Bash(git push -u origin main)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: Add CI/CD workflows and comprehensive README\n\n- GitHub Actions workflows para mobile y backend\n  - mobile-ci.yml: ESLint, Prettier, TypeScript check, build verification\n  - backend-ci.yml: Black, Ruff, mypy, pytest\n\n- README.md completo con:\n  - Guía de instalación detallada (mobile + backend)\n  - Instrucciones de configuración de Supabase\n  - Comandos de desarrollo\n  - Estructura del proyecto\n  - Troubleshooting común\n  - Guías de contribución\n\nUS-001 casi completo - Solo falta crear proyecto Supabase (manual)\n\n🤖 Generated with Claude Code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push origin main)"
     ],
     "deny": [],
     "ask": []

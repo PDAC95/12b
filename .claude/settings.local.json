@@ -29,7 +29,12 @@
       "Bash(git branch -M main)",
       "Bash(git push -u origin main)",
       "Bash(git commit -m \"$(cat <<''EOF''\nfeat: Add CI/CD workflows and comprehensive README\n\n- GitHub Actions workflows para mobile y backend\n  - mobile-ci.yml: ESLint, Prettier, TypeScript check, build verification\n  - backend-ci.yml: Black, Ruff, mypy, pytest\n\n- README.md completo con:\n  - Guía de instalación detallada (mobile + backend)\n  - Instrucciones de configuración de Supabase\n  - Comandos de desarrollo\n  - Estructura del proyecto\n  - Troubleshooting común\n  - Guías de contribución\n\nUS-001 casi completo - Solo falta crear proyecto Supabase (manual)\n\n🤖 Generated with Claude Code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git push origin main)"
+      "Bash(git push origin main)",
+      "Bash(python test_connection.py)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://scandizhjakdgfzgvucz.supabase.co/rest/v1/)",
+      "Bash(ping -n 2 scandizhjakdgfzgvucz.supabase.co)",
+      "Bash(python test_connection_multiple.py)",
+      "Bash(curl -s -H \"apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNjYW5kaXpoamFrZGdmemd2dWN6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE3NjEyNzYsImV4cCI6MjA3NzMzNzI3Nn0.-51cM4FEMUwhb_eEUTPw9Hnnjcw2mQ9OAEpMIh9OU50\" \"https://scandizhjakdgfzgvucz.supabase.co/rest/v1/\" -w \"\\nHTTP Status: %{http_code}\\n\")"
     ],
     "deny": [],
     "ask": []
